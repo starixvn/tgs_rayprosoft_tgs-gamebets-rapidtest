@@ -1,0 +1,33 @@
+﻿using System.Text.Json.Nodes;
+
+namespace Tgs.GameBets.RapidTest.Common.ViewModels;
+public record GameBetRapidTestCommandViewModel(
+	string GameProviderCode,
+	string SubGameProviderCode,
+	int GameId,
+	string ResellerCode,
+	string LicenseeCode,
+	string BrandCode,
+	string PlayerCode,
+	string Username,
+	string CurrencyCode,
+	Guid WalletId,
+	string ExternalRoundId,
+	string ExternalBetId,
+	string ExternalGameId,
+	Enums.BetState BetState,
+	Enums.BetType BetType,
+	Enums.FreeGameState FreeGameState,
+	Enums.GambleState GambleState,
+	Enums.CashoutState CashoutState,
+	Enums.ResettleState ResettleState,
+	Enums.JackpotState JackpotState,
+	decimal CurrencyRatio,
+	decimal Bet,
+	decimal ValidBet,
+	decimal Settle,
+	decimal Commission,
+	decimal Turnover,
+	decimal WinLoss,
+	decimal Jackpot,
+	string AdditionalData);
