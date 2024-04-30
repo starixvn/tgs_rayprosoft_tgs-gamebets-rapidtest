@@ -6,6 +6,19 @@
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 
+	<PropertyGroup>
+		<Version>1.0.1</Version>
+		<Authors>Raypro</Authors>
+		<PackageProjectUrl>https://gitlab.com/rayprosoft/tgs-gamebets-rapidtest</PackageProjectUrl>
+		<RepositoryUrl>https://gitlab.com/rayprosoft/tgs-gamebets-rapidtest.git</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<RootNamespace>Tgs.GameBets.RapidTest.Client</RootNamespace>
+		<PackageId>Tgs.GameBets.RapidTest.Client</PackageId>
+		<Title>Tgs.GameBets.RapidTest.Client</Title>
+		<Description>Tgs.GameBets.RapidTest.Client</Description>
+		<PackageTags>Tgs GameBets RapidTest Client</PackageTags>
+	</PropertyGroup>
+
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
 		<PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
@@ -15,9 +28,11 @@
 		</PackageReference>
 		<PackageReference Include="System.Interactive.Async" Version="6.0.1" />
 	</ItemGroup>
-	
+
 	<ItemGroup>
-		<ProjectReference Include="..\Tgs.GameBets.RapidTest.Common\Tgs.GameBets.RapidTest.Common.csproj" />
+		<ProjectReference Include="..\Tgs.GameBets.RapidTest.Common\Tgs.GameBets.RapidTest.Common.csproj">
+			<PrivateAssets>all</PrivateAssets>
+		</ProjectReference>
 	</ItemGroup>
 
 </Project>
